@@ -53,14 +53,14 @@ prevs_per = []
 
 
 
-# down_files = download_files(
-#     last_prevs, last_acomph, DATE, URL_AMPERE,
-#     USER_TOKEN, aut_token, aut_permition_token, today_prevs
-#     )
-#
-# unzip(DATE)
-# delete_files(DATE)
-# rename_files(DATE)
+down_files = download_files(
+    last_prevs, last_acomph, DATE, URL_AMPERE,
+    USER_TOKEN, aut_token, aut_permition_token, today_prevs
+    )
+
+unzip(DATE)
+delete_files(DATE)
+rename_files(DATE)
 
 token = get_token(USERNAME, PASSWORD, f'{URL_NORUS}/api/Token')
 print(token)
